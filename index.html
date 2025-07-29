@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="ar" >
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Flexbox Referance Guide </title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Flexbox Referance Guide </h1>
+    <p class="subtitle">Each property with direct visual examples - a reference guide for memorization and review</p>
+
+    <!-- Container Properties -->
+    <div class="section">
+      <h2>Properties of Container</h2>
+
+      <div class="property-group">
+        <div class="property-title">1️⃣ display</div>
+        <div class="demo-grid">
+          <div>
+            <div class="demo-container" style="display: flex;" data-label="display: flex">
+              <div class="flex-item">item 1</div>
+              <div class="flex-item">item 2</div>
+              <div class="flex-item">item 3</div>
+            </div>
+            <div class="code-display">
+              <span class="css-property">display</span>: <span class="css-value">flex</span>;
+            </div>
+          </div>
+          <div>
+            <div class="demo-container" style="display: inline-flex;" data-label="display: inline-flex">
+              <div class="flex-item">item 1</div>
+              <div class="flex-item">item 2</div>
+              <div class="flex-item">item 3</div>
+            </div>
+            <div class="code-display">
+              <span class="css-property">display</span>: <span class="css-value">inline-flex</span>;
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="property-group">
+        <div class="property-title">2️⃣ flex-direction</div>
+        <div class="demo-grid">
+          <div>
+            <div class="demo-container flex-row" data-label="row (افتراضي)">
+              <div class="flex-item">1</div>
+              <div class="flex-item">2</div>
+              <div class="flex-item">3</div>
+              <div class="flex-item">4</div>
+            </div>
+            <div class="code-display">
+              <span class="css-property">flex-direction</span>: <span class="css-value">row</span>;
+            </div>
+          </div>
+          <div>
+            <div class="demo-container flex-row-reverse" data-label="row-reverse">
+              <div class="flex-item">1</div>
+              <div class="flex-item">2</div>
+              <div class="flex-item">3</div>
+              <div class="flex-item">4</div>
+            </div>
+            <div class="code-display">
+              <span class="css-property">flex-direction</span>: <span class="css-value">row-reverse</span>;
+            </div>
+          </div>
+          <div>
+            <div class="demo-container flex-column" data-label="column">
+              <div class="flex-item">1</div>
+              <div class="flex-item">2</div>
+              <div class="flex-item">3</div>
+              <div class="flex-item">4</div>
+            </div>
+            <div class="code-display">
+              <span class="css-property">flex-direction</span>: <span class="css-value">column</span>;
+            </div>
+          </div>
+          <div>
+            <div class="demo-container flex-column-reverse" data-label="column-reverse">
+              <div class="flex-item">1</div>
+              <div class="flex-item">2</div>
+              <div class="flex-item">3</div>
+              <div class="flex-item">4</div>
+            </div>
+            <div class="code-display">
+              <span class="css-property">flex-direction</span>: <span class="css-value">column-reverse</span>;
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="property-group">
+        <div class="property-title">3️⃣ justify-content (التوزيع على المحور الرئيسي)</div>
+        <div class="demo-grid">
+          <div>
+            <div class="demo-container justify-start" data-label="flex-start">
+              <div class="flex-item">1</div>
+              <div class="flex-item">2</div>
+              <div class="flex-item">3</div>
+            </div>
+            <div class="code-display">
+              <span class="css-property">justify-content</span>: <span class="css-value">flex-start</span>;
+            </div>
+          </div>
+          <div>
+            <div class="demo-container justify-end" data-label="flex-end">
+              <div class="flex-item">1</div>
+              <div class="flex-item">2</div>
+              <div class="flex-item">3</div>
+            </div>
+            <div class="code-display">
+              <span class="css-property">justify-content</span>: <span class="css-value">flex-end</span>;
+            </div>
+          </div>
+          <div>
+            <div class="demo-container justify-center" data-label="center">
+              <div class="flex-item">1</div>
+              <div class="flex-item">2</div>
+              <div class="flex-item">3</div>
+            </div>
+            <div class="code-display">
+              <span class="css-property">justify-content</span>: <span class="css-value">center</span>;
+            </div>
+          </div>
+          <div>
+            <div class="demo-container justify-between" data-label="space-between">
+              <div class="flex-item">1</div>
+              <div class="flex-item">2</div>
+              <div class="flex-item">3</div>
+            </div>
+            <div class="code-display">
+              <span class="css-property">justify-content</span>: <span class="css-value">space-between</span>;
+            </div>
+          </div>
+          <div>
+            <div class="demo-container justify-around" data-label="space-around">
+              <div class="flex-item">1</div>
+              <div class="flex-item">2</div>
+              <div class="flex-item">3</div>
+            </div>
+            <div class="code-display">
+              <span class="css-property">justify-content</span>: <span class="css-value">space-around</span>;
+            </div>
+          </div>
+          <div>
+            <div class="demo-container justify-evenly" data-label="space-evenly">
+              <div class="flex-item">1</div>
+              <div class="flex-item">2</div>
+              <div class="flex-item">3</div>
+            </div>
+            <div class="code-display">
+              <span class="css-property">justify-content</span>: <span class="css-value">space-evenly</span>;
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="property-group">
+        <div class="property-title">4️⃣ align-items (المحاذاة على المحور المتقاطع)</div>
+        <div class="demo-grid">
+          <div>
+            <div class="demo-container align-stretch" data-label="stretch (افتراضي)">
+              <div class="flex-item">Short element</div>
+              <div class="flex-item">long<br>multi-line<br>element</div>
+              <div class="flex-item">other</div>
+            </div>
+            <div class="code-display">
+              <span class="css-property">align-items</span>: <span class="css-value">stretch</span>;
+            </div>
+          </div>
+          <div>
+            <div class="demo-container align-start" data-label="flex-start">
+              <div class="flex-item">Short element</div>
+              <div class="flex-item">long<br>multi-line<br>element</div>
+              <div class="flex-item">other</div>
+            </div>
+            <div class="code-display">
+              <span class="css-property">align-items</span>: <span class="css-value">flex-start</span>;
+            </div>
+          </div>
+          <div>
+            <div class="demo-container align-end" data-label="flex-end">
+              <div class="flex-item">Short element</div>
+              <div class="flex-item">long<br>multi-line<br>element</div>
+              <div class="flex-item">other</div>
+            </div>
+            <div class="code-display">
+              <span class="css-property">align-items</span>: <span class="css-value">flex-end</span>;
+            </div>
+          </div>
+          <div>
+            <div class="demo-container align-center" data-label="center">
+              <div class="flex-item">Short element</div>
+              <div class="flex-item">long<br>multi-line<br>element</div>
+              <div class="flex-item">other</div>
+            </div>
+            <div class="code-display">
+              <span class="css-property">align-items</span>: <span class="css-value">center</span>;
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="property-group">
+        <div class="property-title">5️⃣ flex-wrap (التفاف العناصر)</div>
+        <div class="demo-grid">
+          <div>
+            <div class="demo-container wrap-nowrap" data-label="nowrap (افتراضي)">
+              <div class="flex-item">item 1</div>
+              <div class="flex-item">item 2</div>
+              <div class="flex-item">item 3</div>
+              <div class="flex-item">item 4</div>
+              <div class="flex-item">item 5</div>
+            </div>
+            <div class="code-display">
+              <span class="css-property">flex-wrap</span>: <span class="css-value">nowrap</span>;
+            </div>
+          </div>
+          <div>
+            <div class="demo-container wrap-wrap" data-label="wrap">
+              <div class="flex-item">item 1</div>
+              <div class="flex-item">item 2</div>
+              <div class="flex-item">item 3</div>
+              <div class="flex-item">item 4</div>
+              <div class="flex-item">item 5</div>
+            </div>
+            <div class="code-display">
+              <span class="css-property">flex-wrap</span>: <span class="css-value">wrap</span>;
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="property-group">
+        <div class="property-title">6️⃣ gap </div>
+        <div class="demo-grid">
+          <div>
+            <div class="demo-container without-gap" data-label="without gap">
+              <div class="flex-item">1</div>
+              <div class="flex-item">2</div>
+              <div class="flex-item">3</div>
+              <div class="flex-item">4</div>
+            </div>
+            <div class="code-display">
+              <span class="css-property">/* without gap */</span>
+            </div>
+          </div>
+          <div>
+            <div class="demo-container with-gap" data-label="gap: 15px">
+              <div class="flex-item">1</div>
+              <div class="flex-item">2</div>
+              <div class="flex-item">3</div>
+              <div class="flex-item">4</div>
+            </div>
+            <div class="code-display">
+              <span class="css-property">gap</span>: <span class="css-value">15px</span>;
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item Properties -->
+    <div class="section">
+      <h2>Item properties</h2>
+
+      <div class="property-group">
+        <div class="property-title">1️⃣ flex-grow (النمو)</div>
+        <div class="demo-grid">
+          <div>
+            <div class="demo-container item-demo" data-label="flex-grow مختلفة">
+              <div class="flex-item">normal</div>
+              <div class="flex-item grow-1">grow: 1</div>
+              <div class="flex-item grow-2">grow: 2</div>
+              <div class="flex-item">normal</div>
+            </div>
+            <div class="code-display">
+              <span class="css-property">.item2</span> { <span class="css-property">flex-grow</span>: <span
+                class="css-value">1</span>; }<br>
+              <span class="css-property">.item3</span> { <span class="css-property">flex-grow</span>: <span
+                class="css-value">2</span>; }
+            </div>
+          </div>
+          <div>
+            <div class="demo-container item-demo" data-label="flex: 1 للكل">
+              <div class="flex-item grow-1">equal</div>
+              <div class="flex-item grow-1">equal</div>
+              <div class="flex-item grow-1">equal</div>
+            </div>
+            <div class="code-display">
+              <span class="css-property">.item</span> { <span class="css-property">flex</span>: <span
+                class="css-value">1</span>; }
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="property-group">
+        <div class="property-title">2️⃣ flex-basis (الحجم الأساسي)</div>
+        <div class="demo-grid">
+          <div>
+            <div class="demo-container item-demo" data-label="أحجام أساسية مختلفة">
+              <div class="flex-item basis-auto">auto</div>
+              <div class="flex-item basis-100">100px</div>
+              <div class="flex-item basis-200">200px</div>
+              <div class="flex-item basis-0 grow-1">0 + grow</div>
+            </div>
+            <div class="code-display">
+              <span class="css-property">flex-basis</span>: <span class="css-value">auto</span>; <span
+                class="css-value">100px</span>; <span class="css-value">200px</span>; <span class="css-value">0</span>;
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="property-group">
+        <div class="property-title">3️⃣ order (تغيير الترتيب)</div>
+        <div class="demo-grid">
+          <div>
+            <div class="demo-container item-demo" data-label="ترتيب مخصص">
+              <div class="flex-item order-2">First (order: 2)</div>
+              <div class="flex-item order-minus1">Second (order: -1)</div>
+              <div class="flex-item">Third (order: 0)</div>
+              <div class="flex-item order-1">Fourth (order: 1)</div>
+            </div>
+            <div class="code-display">
+              <span class="css-property">order</span>: <span class="css-value">-1</span>; <span
+                class="css-value">0</span>; <span class="css-value">1</span>; <span class="css-value">2</span>;
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="property-group">
+        <div class="property-title">4️⃣ align-self (محاذاة فردية)</div>
+        <div class="demo-grid">
+          <div>
+            <div class="demo-container" style="display: flex; align-items: center; height: 120px;"
+              data-label="align-self مختلفة">
+              <div class="flex-item">normal</div>
+              <div class="flex-item self-start">start</div>
+              <div class="flex-item self-end">end</div>
+              <div class="flex-item self-center">center</div>
+            </div>
+            <div class="code-display">
+              <span class="css-property">align-self</span>: <span class="css-value">flex-start</span>; <span
+                class="css-value">flex-end</span>; <span class="css-value">center</span>;
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Practical Patterns -->
+    <div class="section">
+      <h2>🔥 The most famous practical patterns</h2>
+      <div class="pattern-grid">
+        <div class="pattern-card">
+          <div class="pattern-title">Perfect Centering</div>
+          <div class="demo-container"
+            style="display: flex; justify-content: center; align-items: center; height: 100px;"
+            data-label="توسيط مثالي">
+            <div class="flex-item">content</div>
+          </div>
+          <div class="code-display">
+            .center {<br>
+            &nbsp;&nbsp;display: flex;<br>
+            &nbsp;&nbsp;justify-content: center;<br>
+            &nbsp;&nbsp;align-items: center;<br>
+            }
+          </div>
+        </div>
+
+        <div class="pattern-card">
+          <div class="pattern-title">Navigation Bar</div>
+          <div class="demo-container" style="display: flex; justify-content: space-between; align-items: center;"
+            data-label="شريط التنقل">
+            <div class="flex-item">Logo</div>
+            <div class="flex-item">Menu</div>
+          </div>
+          <div class="code-display">
+            .navbar {<br>
+            &nbsp;&nbsp;display: flex;<br>
+            &nbsp;&nbsp;justify-content: space-between;<br>
+            &nbsp;&nbsp;align-items: center;<br>
+            }
+          </div>
+        </div>
+
+        <div class="pattern-card">
+          <div class="pattern-title">Responsive Cards</div>
+          <div class="demo-container" style="display: flex; flex-wrap: wrap; gap: 10px;" data-label="كروت متجاوبة">
+            <div class="flex-item" style="flex: 1 1 100px;">Card 1</div>
+            <div class="flex-item" style="flex: 1 1 100px;">Card 2</div>
+            <div class="flex-item" style="flex: 1 1 100px;">Card 3</div>
+          </div>
+          <div class="code-display">
+            .cards {<br>
+            &nbsp;&nbsp;display: flex;<br>
+            &nbsp;&nbsp;flex-wrap: wrap;<br>
+            &nbsp;&nbsp;gap: 20px;<br>
+            }<br>
+            .card {<br>
+            &nbsp;&nbsp;flex: 1 1 300px;<br>
+            }
+          </div>
+        </div>
+
+        <div class="pattern-card">
+          <div class="pattern-title">Sticky Footer</div>
+          <div class="demo-container" style="display: flex; flex-direction: column; "
+            data-label="Footer ثابت">
+            <div class="flex-item">Header</div>
+            <div class="flex-item" style="flex: 1;">Main Content</div>
+            <div class="flex-item">Footer</div>
+          </div>
+          <div class="code-display">
+            body {<br>
+            &nbsp;&nbsp;display: flex;<br>
+            &nbsp;&nbsp;flex-direction: column;<br>
+            &nbsp;&nbsp;min-height: 100vh;<br>
+            }<br>
+            main { flex: 1; }
+          </div>
+        </div>
+
+        <div class="pattern-card">
+          <div class="pattern-title">Media Object</div>
+          <div class="demo-container" style="display: flex; gap: 15px; align-items: flex-start;"
+            data-label="كائن إعلامي">
+            <div class="flex-item" style="flex: 0 0 60px; height: 60px;">📷</div>
+            <div class="flex-item" style="flex: 1; font-size: 0.8em; padding: 10px;">     
+              The text content fills the remaining space while keeping the image size constant.
+            </div>
+          </div>
+          <div class="code-display">
+            .media {<br>
+            &nbsp;&nbsp;display: flex;<br>
+            &nbsp;&nbsp;gap: 15px;<br>
+            }<br>
+            .media-object { flex: 0 0 60px; }<br>
+            .media-content { flex: 1; }
+          </div>
+        </div>
+
+        <div class="pattern-card">
+          <div class="pattern-title">Input Group</div>
+          <div class="demo-container" style="display: flex;" data-label="مجموعة إدخال">
+            <div class="flex-item" style="flex: 1;">Input Field</div>
+            <div class="flex-item" style="flex: 0 0 auto;">Button</div>
+          </div>
+          <div class="code-display">
+            .input-group {<br>
+            &nbsp;&nbsp;display: flex;<br>
+            }<br>
+            .input { flex: 1; }<br>
+            .button { flex: 0 0 auto; }
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tips and Best Practices -->
+    <div class="section">
+      <h2>💡 Pro Flexbox Tips </h2>
+      <div class="tips-list">
+        <ul>
+          <li><span class="highlight">gap</span> is now supported in 98% of browsers – use it instead of margin between flex items.</li>
+          <li>Use <span class="highlight">flex: 1</span>instead of flex-grow: 1 for flexible items — it's shorthand and more readable. </li>
+          <li>Need text with different sizes to align properly on the same row? Use<span class="highlight">align-items: baseline</span></li>
+          <li><span class="highlight">flex-basis: 0</span> ensures the flex item starts growing from zero — useful for equal growth in some layouts.</li>
+          <li><span class="highlight">flex-wrap: wrap</span> it’s essential for responsive layouts - Don't forget!</li>
+          <li>For full-page layouts with flex-direction: column, use <span class="highlight">min-height: 100vh</span> to fill the screen height.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Common Mistakes -->
+    <div class="section">
+      <h2>⚠️ Common Flexbox Mistakes to Avoid </h2>
+      <div class="tips-list" style="background: linear-gradient(135deg, #ffe8e8, #fff0f0); border-left-color: #f44336;">
+        <ul>
+          <li>Don’t use <span class="highlight">height: 100%</span> with align-items - Use min-height</li>
+          <li>Remember:<span class="highlight">margin: auto</span> behaves differently in Flexbox — it can center items both horizontally and vertically.</li>
+          <li>With <span class="highlight">flex-wrap: wrap</span> Use align-content not align-items to control spacing between multiple rows</li>
+          <li>Don’t forget<span class="highlight">flex-shrink: 0</span> for elements that should not shrink when space is limited.</li>
+          <li><span class="highlight">justify-content</span> aligns items along the main axis, which depends on your flex-direction.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Mobile Examples -->
+    <div class="section">
+      <h2>📱 Examples for mobile</h2>
+      <div class="pattern-grid">
+        <div class="pattern-card">
+          <div class="pattern-title">Mobile Layout</div>
+          <div class="demo-container"
+            style="display: flex; flex-direction: column; gap: 10px; max-width: 250px; margin: 0 auto;"
+            data-label="تخطيط موبايل">
+            <div class="flex-item" style="width: 100%;">Header</div>
+            <div style="display: flex; gap: 10px;">
+              <div class="flex-item" style="flex: 1;">Nav</div>
+              <div class="flex-item" style="flex: 3;">Content</div>
+            </div>
+            <div class="flex-item" style="width: 100%;">Footer</div>
+          </div>
+          <div class="code-display">
+            .mobile-layout {<br>
+            &nbsp;&nbsp;display: flex;<br>
+            &nbsp;&nbsp;flex-direction: column;<br>
+            }<br>
+            .content-row {<br>
+            &nbsp;&nbsp;display: flex;<br>
+            &nbsp;&nbsp;gap: 10px;<br>
+            }
+          </div>
+        </div>
+
+        <div class="pattern-card">
+          <div class="pattern-title">Card Stack</div>
+          <div class="demo-container"
+            style="display: flex; flex-direction: column; gap: 10px; max-width: 200px; margin: 0 auto;"
+            data-label="مكدس الكروت">
+            <div class="flex-item">Card 1</div>
+            <div class="flex-item">Card 2</div>
+            <div class="flex-item">Card 3</div>
+            <div class="flex-item">Card 4</div>
+          </div>
+          <div class="code-display">
+            @media (max-width: 768px) {<br>
+            &nbsp;&nbsp;.cards {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;flex-direction: column;<br>
+            &nbsp;&nbsp;}<br>
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flex Shorthand -->
+    <div class="section">
+      <h2>🎯The Magic Shorthand</h2>
+      <div class="property-group">
+        <div class="property-title">flex: القيم الشائعة</div>
+        <div class="demo-grid">
+          <div>
+            <div class="demo-container item-demo" data-label="flex: 1">
+              <div class="flex-item" style="flex: 1;">flex: 1</div>
+              <div class="flex-item" style="flex: 1;">flex: 1</div>
+              <div class="flex-item" style="flex: 1;">flex: 1</div>
+            </div>
+            <div class="code-display">
+              <span class="css-property">flex</span>: <span class="css-value">1</span>; <span style="color: #999;">
+                /* Same flex: 1 1 0% */
+              </span>
+            </div>
+          </div>
+          <div>
+            <div class="demo-container item-demo" data-label="flex: auto">
+              <div class="flex-item" style="flex: auto;">Short content</div>
+              <div class="flex-item" style="flex: auto;">Much longer content</div>
+              <div class="flex-item" style="flex: auto;">short</div>
+            </div>
+            <div class="code-display">
+              <span class="css-property">flex</span>: <span class="css-value">auto</span>; <span style="color: #999;">/*
+                Same flex: 1 1 auto */</span>
+            </div>
+          </div>
+          <div>
+            <div class="demo-container item-demo" data-label="flex: none">
+              <div class="flex-item" style="flex: none;">fixed</div>
+              <div class="flex-item" style="flex: 1;">flexible (takes remaining space)</div>
+              <div class="flex-item" style="flex: none;">fixed</div>
+            </div>
+            <div class="code-display">
+              <span class="css-property">flex</span>: <span class="css-value">none</span>; <span style="color: #999;">/*
+                Same flex: 0 0 auto */</span>
+            </div>
+          </div>
+          <div>
+            <div class="demo-container item-demo" data-label="مخصص">
+              <div class="flex-item" style="flex: 0 1 200px;">100px base</div>
+              <div class="flex-item" style="flex: 2 1 100px;">grow: 2</div>
+              <div class="flex-item" style="flex: 1 1 100px;">grow: 1</div>
+            </div>
+            <div class="code-display">
+              <span class="css-property">flex</span>: <span class="css-value">2 1 100px</span>; <span
+                style="color: #999;">/* grow shrink basis */</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Summary -->
+    <div class="section">
+      <h2>🎖️ Final Summary</h2>
+      <div class="summary-grid">
+        <div class="summary-card" style="background: linear-gradient(135deg, #e8f5e8, #f0f8e8);">
+          <h4 style="color: #4caf50;">🏗️For Basic Layout</h4>
+          <p style="font-size: 0.9em; line-height: 1.6;">
+            <strong>justify-content</strong> for horizontal distribution<br>
+            <strong>align-items</strong> for vertical alignment<br>
+            <strong>flex-direction</strong> to change direction
+          </p>
+        </div>
+        <div class="summary-card" style="background: linear-gradient(135deg, #e3f2fd, #f1f8e9);">
+          <h4 style="color: #2196f3;">📱 For Responsive Design</h4>
+          <p style="font-size: 0.9em; line-height: 1.6;">
+            <strong>flex-wrap: wrap</strong> for wrapping<br>
+            <strong>flex: 1 1 300px</strong> for cards<br>
+            <strong>gap</strong> for smart spacing
+          </p>
+        </div>
+        <div class="summary-card" style="background: linear-gradient(135deg, #fce4ec, #f8bbd9);">
+          <h4 style="color: #e91e63;">⚡ For Performance</h4>
+          <p style="font-size: 0.9em; line-height: 1.6;">
+            Avoid complex <strong>nested flex</strong><br>
+            Use <strong>flex shorthand</strong><br>
+            <strong>gap</strong> is better than margin
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
